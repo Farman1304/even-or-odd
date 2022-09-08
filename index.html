@@ -14,12 +14,12 @@ num1: <input type="number" id="num1"> <br>
 num2: <input type="number" id="num2"> <br>
 
 
-<button type="submit" onclick="doSum(); return false">Sum</button>
-<button type="submit" onclick="doMultply(); return false">Multply</button>
-<button type="submit" onclick="doSub(); return false">Sub></button>
-<button type="submit" onclick="doDivide(); return false">Divide</button>
-<button type="submit" onclick="doPercentage(); return false">Percentage</button>
-<button type="submit" onclick="doModulus">Modulus</button>
+<button type=onsubmit="doSum(); return false">Sum</button>
+<button type=onsubmit="doMulitply(); return false">Multiply</button>
+<button type=onsubmit="doSub(); return false">Sub</button>
+<button type=onsubmit="doDivide(); return false">Divide</button>
+<button type=onsubmit="doPercentage(); return false">Percentage</button>
+<button type=onsubmit="doModulus">Modulus</button>
 
 </form>
 
@@ -42,28 +42,15 @@ num2: <input type="number" id="num2"> <br>
 
     console.log ("result: ",result);
 
-    document.querySelector("#result").innerHTML = result
+    document.querySelector("#result").innerHTML = result;
  }
 
+ 
 
-   function doMultply() {
-
- let num1=document.querySelector("num1").value
- let num2=document.querySelector("num1").value
-
-
- num1= Number(num1);
- num2= Number(num2);
-
- console.log ("num1",num1)
- console.log ("num2",num2)
-
- let result= num1 + num2;
-
-   document.querySelector("#result").innerHTML=result;
-   
-
-
+   function doMulitply () {
+    
+    let num1=document.querySelector("#num1").value
+    let num2=document.querySelector("#num2").value
    }
 
 
